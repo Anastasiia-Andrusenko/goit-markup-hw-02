@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-Repositiry HW 1 (goit)
+# goit-markup-hw-02
+
+Repositiry HW 2 (goit)
