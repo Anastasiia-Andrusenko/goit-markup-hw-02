@@ -7,7 +7,9 @@
 /* акцентный цвет текста #2196F3; */
 /* второй цвет текста #212121 */
 
+
 /* объявление переменной */
+
 :root {
     --white-color: #FFFFFF;
     --second-background: #F5F4FA;
@@ -17,6 +19,9 @@
     --footer-background: #2F303A;
 
 }
+
+
+/* основное наследование */
 
 body {
     font-family: 'Roboto' , sans-serif;
@@ -29,9 +34,13 @@ a {
     text-decoration: none;
 }
 
+/* все ли без маркера */
+
 li {
     list-style-type: none;
 }
+
+/* заголовки второго уровня на главной странице */
 
 .main-page h2 {
   font-weight: 700;
@@ -42,6 +51,8 @@ li {
   color: var(--second-text-color);
 }
 
+/* заголовки второго уровня на с. портфолио */
+
 .portfolio-page h2 {
     font-weight: 700;
     font-size: 18px;
@@ -50,6 +61,8 @@ li {
     color: var(--second-text-color);
 }
 
+/* курсоh на кнопки */
+
 .filter,
 .hero-btn {
     cursor: pointer;
@@ -57,6 +70,11 @@ li {
 
 
 /* header styles */
+
+/* стиль навигации */
+
+/* шрифт */
+
 .nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -64,6 +82,10 @@ li {
     letter-spacing: 0.02em;
     color: #212121;
 }
+
+/* контакты в хедере */
+
+/* шрифт */
 
 header .contact {
     font-family: 'Roboto';
@@ -75,6 +97,8 @@ header .contact {
 
 }
 
+/* Ховер и фокус в хедере */
+
 .nav .nav-link:hover,
 .contacts .contact:hover,
 .nav .nav-link:focus,
@@ -85,6 +109,8 @@ header .contact {
 
 /* footer styles */
 
+/* оформление */
+
 footer {
     background-color: var(--footer-background);
     height: 252px;
@@ -92,6 +118,9 @@ footer {
     top: 2097px;
     color: var(--white-color);
 }
+
+
+/* географический адрес в футере шрифт */
 
 footer .address {
     font-family: 'Roboto';
@@ -102,6 +131,8 @@ footer .address {
     color: #FFFFFF;
 }
 
+/* контакты в футере шрифт */
+
 footer .contact {
     font-family: 'Roboto';
     font-style: normal;
@@ -111,6 +142,8 @@ footer .contact {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* ховер и фокус в футере */
+
 footer .contact:hover,
 footer .contact:focus {
     color: var(--accent-color);
@@ -119,6 +152,8 @@ footer .contact:focus {
 
 
 /* logo */
+
+/* шрифт */
 
 .logo {
     font-family: 'Raleway' , sans-serif;
@@ -140,12 +175,16 @@ footer .contact:focus {
 
 /* hero styles */
 
+/* герой стиль */
+
 .hero {
     background-color: #2F303A;
     height: 600px;
     left: 0px;
     top: 80px;
 }
+
+/* хедлайн герой шрифт */
 
 .hero-heading {
     font-weight: 900;
@@ -157,6 +196,8 @@ footer .contact:focus {
     color: var(--white-color);
 
 }
+
+/* кнопка ЗАКАЗАТЬ УСЛУГУ в герое */
 
 .hero-btn {
     font-family: 'Roboto';
@@ -171,9 +212,25 @@ footer .contact:focus {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 }
 
 /* advantages styles */
+
+/* Заголовок секции убираю видимость */
+
+.advantages-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* шрифт заголовки преимуществ */
 
 .advantages-list-caption {
     font-family: 'Roboto';
@@ -187,6 +244,8 @@ footer .contact:focus {
 
 /* team styles */
 
+/* имена сотрудников шрифт */
+
 .team h3 {
     font-weight: 500;
     font-size: 16px;
@@ -195,15 +254,23 @@ footer .contact:focus {
     color: var(--second-text-color); 
 }
 
+/* должность сотрудников шрифт */
+
 .team p {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 00.03em;
 }
 
+/* фон */
+
 .team {
     background-color: var(--second-background);
 }
+
+
+
+
 
 /* portfolio page styles */
 
@@ -217,10 +284,25 @@ footer .contact:focus {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     background-color: var(--second-background);
+    border: none;
 }
 
 .filter:hover,
 .filter:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
+    border: none;
+}
+
+/* скрытие заголовка страницы портфолио */
+
+.portfolio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
